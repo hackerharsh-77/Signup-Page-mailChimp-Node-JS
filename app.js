@@ -37,10 +37,10 @@ app.post('/signup',function(req,res){
     var jsonData = JSON.stringify(data);
 
     var options = {
-        url:"https://us14.api.mailchimp.com/3.0/lists/#04bbc01e9c",
+        url:"https://us14.api.mailchimp.com/3.0/lists/#listid",
         method:"POST",
         headers: {
-            "Authorization": "harsh 3ffbbfff6278142c1882cd36cf0918db-us14"
+            "Authorization": "harsh api_key"
         },
         body: jsonData,
         
